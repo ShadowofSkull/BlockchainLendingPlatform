@@ -1,0 +1,110 @@
+{
+    "hints": {
+        "request_loan(uint64)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "read_loan()uint64": {
+            "read_only": true,
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "lend(pay)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMQpieXRlY2Jsb2NrIDB4NjE2ZDZmNzU2ZTc0NWY2YzY1NmU2NCAweDYyNmY3MjcyNmY3NzY1NzI1ZjYxNjQ2NDcyNjU3MzczIDB4IDB4NmM2NTZlNjQ2NTcyNWY2MTY0NjQ3MjY1NzM3Mwp0eG4gTnVtQXBwQXJncwppbnRjXzAgLy8gMAo9PQpibnogbWFpbl9sOAp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDUzNjg4YjkxIC8vICJyZXF1ZXN0X2xvYW4odWludDY0KXZvaWQiCj09CmJueiBtYWluX2w3CnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4ODQ3YjhhNmEgLy8gInJlYWRfbG9hbigpdWludDY0Igo9PQpibnogbWFpbl9sNgp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDBlN2Q2ZjU4IC8vICJsZW5kKHBheSl2b2lkIgo9PQpibnogbWFpbl9sNQplcnIKbWFpbl9sNToKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiBsZW5kY2FzdGVyXzYKaW50Y18xIC8vIDEKcmV0dXJuCm1haW5fbDY6CnR4biBPbkNvbXBsZXRpb24KaW50Y18wIC8vIE5vT3AKPT0KdHhuIEFwcGxpY2F0aW9uSUQKaW50Y18wIC8vIDAKIT0KJiYKYXNzZXJ0CmNhbGxzdWIgcmVhZGxvYW5jYXN0ZXJfNQppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNzoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiByZXF1ZXN0bG9hbmNhc3Rlcl80CmludGNfMSAvLyAxCnJldHVybgptYWluX2w4Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CmJueiBtYWluX2wxMAplcnIKbWFpbl9sMTA6CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCj09CmFzc2VydApjYWxsc3ViIGNyZWF0ZV8wCmludGNfMSAvLyAxCnJldHVybgoKLy8gY3JlYXRlCmNyZWF0ZV8wOgpwcm90byAwIDAKYnl0ZWNfMCAvLyAiYW1vdW50X2xlbmQiCmludGNfMCAvLyAwCmFwcF9nbG9iYWxfcHV0CmJ5dGVjXzEgLy8gImJvcnJvd2VyX2FkZHJlc3MiCmJ5dGVjXzIgLy8gIiIKYXBwX2dsb2JhbF9wdXQKcHVzaGJ5dGVzIDB4Njk2ZTc0NjU3MjY1NzM3NDVmNzI2MTc0NjUgLy8gImludGVyZXN0X3JhdGUiCmludGNfMCAvLyAwCmFwcF9nbG9iYWxfcHV0CmJ5dGVjXzMgLy8gImxlbmRlcl9hZGRyZXNzIgpieXRlY18yIC8vICIiCmFwcF9nbG9iYWxfcHV0CnB1c2hieXRlcyAweDZjNjU2ZTY0Njk2ZTY3NWY3MDY1NzI2OTZmNjQgLy8gImxlbmRpbmdfcGVyaW9kIgppbnRjXzAgLy8gMAphcHBfZ2xvYmFsX3B1dApyZXRzdWIKCi8vIHJlcXVlc3RfbG9hbgpyZXF1ZXN0bG9hbl8xOgpwcm90byAxIDAKdHhuIFNlbmRlcgpnbG9iYWwgQ3JlYXRvckFkZHJlc3MKPT0KLy8gdW5hdXRob3JpemVkCmFzc2VydApieXRlY18xIC8vICJib3Jyb3dlcl9hZGRyZXNzIgpnbG9iYWwgQ3JlYXRvckFkZHJlc3MKYXBwX2dsb2JhbF9wdXQKYnl0ZWNfMCAvLyAiYW1vdW50X2xlbmQiCmZyYW1lX2RpZyAtMQphcHBfZ2xvYmFsX3B1dApyZXRzdWIKCi8vIHJlYWRfbG9hbgpyZWFkbG9hbl8yOgpwcm90byAwIDEKaW50Y18wIC8vIDAKYnl0ZWNfMCAvLyAiYW1vdW50X2xlbmQiCmFwcF9nbG9iYWxfZ2V0CmZyYW1lX2J1cnkgMApyZXRzdWIKCi8vIGxlbmQKbGVuZF8zOgpwcm90byAxIDAKZnJhbWVfZGlnIC0xCmd0eG5zIEFtb3VudApieXRlY18wIC8vICJhbW91bnRfbGVuZCIKYXBwX2dsb2JhbF9nZXQKPT0KYXNzZXJ0CmZyYW1lX2RpZyAtMQpndHhucyBSZWNlaXZlcgpieXRlY18xIC8vICJib3Jyb3dlcl9hZGRyZXNzIgphcHBfZ2xvYmFsX2dldAo9PQphc3NlcnQKYnl0ZWNfMyAvLyAibGVuZGVyX2FkZHJlc3MiCmZyYW1lX2RpZyAtMQpndHhucyBTZW5kZXIKYXBwX2dsb2JhbF9wdXQKaW50Y18xIC8vIDEKcmV0dXJuCgovLyByZXF1ZXN0X2xvYW5fY2FzdGVyCnJlcXVlc3Rsb2FuY2FzdGVyXzQ6CnByb3RvIDAgMAppbnRjXzAgLy8gMAp0eG5hIEFwcGxpY2F0aW9uQXJncyAxCmJ0b2kKZnJhbWVfYnVyeSAwCmZyYW1lX2RpZyAwCmNhbGxzdWIgcmVxdWVzdGxvYW5fMQpyZXRzdWIKCi8vIHJlYWRfbG9hbl9jYXN0ZXIKcmVhZGxvYW5jYXN0ZXJfNToKcHJvdG8gMCAwCmludGNfMCAvLyAwCmNhbGxzdWIgcmVhZGxvYW5fMgpmcmFtZV9idXJ5IDAKcHVzaGJ5dGVzIDB4MTUxZjdjNzUgLy8gMHgxNTFmN2M3NQpmcmFtZV9kaWcgMAppdG9iCmNvbmNhdApsb2cKcmV0c3ViCgovLyBsZW5kX2Nhc3RlcgpsZW5kY2FzdGVyXzY6CnByb3RvIDAgMAppbnRjXzAgLy8gMAp0eG4gR3JvdXBJbmRleAppbnRjXzEgLy8gMQotCmZyYW1lX2J1cnkgMApmcmFtZV9kaWcgMApndHhucyBUeXBlRW51bQppbnRjXzEgLy8gcGF5Cj09CmFzc2VydApmcmFtZV9kaWcgMApjYWxsc3ViIGxlbmRfMwpyZXRzdWI=",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 2,
+            "num_uints": 3
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "amount_lend": {
+                    "type": "uint64",
+                    "key": "amount_lend",
+                    "descr": ""
+                },
+                "borrower_address": {
+                    "type": "bytes",
+                    "key": "borrower_address",
+                    "descr": ""
+                },
+                "interest_rate": {
+                    "type": "uint64",
+                    "key": "interest_rate",
+                    "descr": ""
+                },
+                "lender_address": {
+                    "type": "bytes",
+                    "key": "lender_address",
+                    "descr": ""
+                },
+                "lending_period": {
+                    "type": "uint64",
+                    "key": "lending_period",
+                    "descr": ""
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "LendingContract",
+        "methods": [
+            {
+                "name": "request_loan",
+                "args": [
+                    {
+                        "type": "uint64",
+                        "name": "amount"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "read_loan",
+                "args": [],
+                "returns": {
+                    "type": "uint64"
+                }
+            },
+            {
+                "name": "lend",
+                "args": [
+                    {
+                        "type": "pay",
+                        "name": "pay"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}
