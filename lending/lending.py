@@ -1,8 +1,7 @@
-# Sample Hello World Beaker smart contract - the most basic starting point for an Algorand smart contract
 from beaker import *
 from pyteal import *
 
-#states in contract 
+# States in contract 
 class LendingState:
     amount_lend = GlobalStateValue(
         stack_type=TealType.uint64,
@@ -29,7 +28,7 @@ class LendingState:
 app = Application("LendingContract", state=LendingState()).apply(
     unconditional_create_approval, initialize_global_state=True)
 
-# Function for Borrower make request for the amount to borrow(take address,amount and asset)
+# For borrower to make request for the amount to borrow(take address,amount and asset)
 @app.external(authorize=Authorize.only(Global.creator_address()))
 def request_loan(amount: abi.Uint64) -> Expr:
     return Seq(
